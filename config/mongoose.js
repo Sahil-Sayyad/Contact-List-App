@@ -1,11 +1,9 @@
-//Adding Mongoose Module Dependencies
+//import required packages 
 const mongoose = require('mongoose');
+//connect to db 
+const mongoDb = "mongodb+srv://sahilsayyad:9325@contactlist.6zvbstw.mongodb.net/?retryWrites=true&w=majority"
 
-//Cathing Error Here.
-main().catch(err => console.log("Connection Error",err));
-
-//Connecting to Database.
-async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/contact_List');
-  console.log("Connected to MongoDB");
-}
+mongoose
+.connect(mongoDb)
+.then(()=>console.log("mongoDb connected succesfully "))
+.catch((err)=> console.log("connection error to connect mongoDb ",err));

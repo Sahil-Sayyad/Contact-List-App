@@ -1,0 +1,114 @@
+/* Main css styleshhets */
+/* import font  */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #136a8a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #267871,
+    #136a8a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #267871,
+    #136a8a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+}
+
+/* add contact  */
+.addContact {
+  padding-top: 5rem;
+  position: relative;
+  left: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+.addContact input {
+  font-size: 1.2rem;
+  margin: 5%;
+  padding: 3%;
+  border: 1px solid rgb(124, 123, 123);
+  background: #136a8a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #267871,
+    #136a8a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #267871, #136a8a);
+  color: white;
+}
+.addContact input[type="submit"] {
+  color: rgb(218, 216, 216);
+  position: relative;
+  left: 22%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  background: #06beb6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #48b1bf,
+    #06beb6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #48b1bf,
+    #06beb6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  cursor: pointer;
+}
+
+/* contact list  */
+.contactList {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+tr,
+th,
+td {
+  text-align: left;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border: 1px solid rgb(158, 157, 155);
+}
+.contactList table input[type="submit"] {
+  cursor: pointer;
+  padding: 10%;
+  font-size: 1.2rem;
+  background: #136a8a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #267871,
+    #136a8a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #267871,
+    #136a8a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+  color: white;
+}
+.tableHeading {
+  color: rgb(194, 190, 190);
+}
+

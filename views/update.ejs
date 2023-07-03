@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <!-- linking css stylesheet -->
+    <link rel="stylesheet" href="/stylesheets/update.css" />
+  </head>
+  <body>
+    <main>
+      <div class="updateContact">
+        <!-- updating contact  -->
+        <% for(let Data of data){ %> <% if(id == Data._id){ %>
+        <form action="/update/<%=Data._id%>" method="post">
+          <label for="name">Update Name</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="update name"
+            value="<%=Data.name%>"
+          /><br />
+          <label for="phone">Update Phone</label>
+          <input
+            type="phone"
+            name="phone"
+            placeholder="update phone"
+            value="<%=Data.phone%>"
+          />
+          <input type="submit" value="Update" />
+        </form>
+        <% } %> <% } %>
+      </div>
+    </main>
+  </body>
+</html>
