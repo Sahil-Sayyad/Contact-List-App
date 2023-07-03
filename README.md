@@ -4,9 +4,31 @@
     -It is developed to create a soothing Experience with powerful features and clean interface.
   <br>
 
-# Features Required
 
+# Features
+  --------
+- MVC Project Structure
+- Node.js clusters support
+- Create Contact
+- Delete Contact
+- Update Contact
+- Read Contact
 
+# Getting Started
+---------------
+
+The easiest way to get started is to clone the repository:
+
+```bash
+# Get the latest snapshot
+git clone https://github.com/Sahil-Sayyad/Contact-List-App.git
+
+# Install NPM dependencies
+npm install
+
+# Then simply start your app
+npm start
+```
 # PRODUCT DEMO
 
 <i><b>Home Page </b></li> 
