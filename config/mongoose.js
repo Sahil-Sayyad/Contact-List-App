@@ -1,7 +1,7 @@
 //import required packages 
 const mongoose = require('mongoose');
 //connect to db 
-const mongoDb = "mongodb+srv://sahilsayyad:9325@contactlist.6zvbstw.mongodb.net/?retryWrites=true&w=majority"
+const mongoDb = "mongodb+srv://<yourusername>:<yourpassword>@contactlist.6zvbstw.mongodb.net/?retryWrites=true&w=majority"
 
 mongoose
 .connect(mongoDb)
